@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Brew</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Coffee Brew</div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="section home">
+        <img class="hero-image" src="../assets/hero.jpg" alt="">
+        <div class="content">
+          <h1 class="hero-title">Welcome to Coffee Brew</h1>
+          <p class="hero-subtitle">Experience the finest coffee blends crafted to perfection.</p>
+          <button class="cta hero-cta">Shop Now</button>
+        </div>
+      </section>
+
+      <section id="featured" class="section featured">
+        <div class="content">
+          <h2>Our Featured Blends</h2>
+          <div class="cards">
+            <div class="card">
+              <img src="assets/blend1.png" alt="Coffee Blend 1" />
+              <h3>Espresso Delight</h3>
+              <p>Rich and bold espresso blend for true coffee lovers.</p>
+            </div>
+            <div class="card">
+                <img src="assets/blend2.png" alt="Coffee Blend 2" />
+              <h3>Morning Bliss</h3>
+              <p>A smooth, mild blend perfect for starting your day.</p>
+            </div>
+            <div class="card">
+                <img src="assets/blend3.png" alt="Coffee Blend 3" />
+              <h3>Decaf Harmony</h3>
+              <p>
+                All the flavor, none of the caffeine. A perfect evening brew.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="section about">
+        <div class="content about-content">
+          <div class="content-double">
+            <div class="content-double-text">
+              <h2>About Coffee Brew</h2>
+              <p>
+                We are passionate about coffee. Our roastery and café provide
+                high-quality coffee made from the finest beans sourced globally.
+                We believe in sustainability and fair trade practices. 
+                <br>
+                Our mission is to deliver exceptional coffee while supporting coffee-growing communities around the world.
+
+              </p>
+              <button class="cta">Read More</button>
+            </div>
+            <img src="assets/customer.png"  alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="reviews" class="section reviews">
+        <div class="content">
+          <h2>What Our Customers Say</h2>
+          <div class="reviews-slider">
+            <div class="pre-review">Prev</div>
+            <div class="reviews-container">
+              <blockquote class="review">
+                "The best coffee I've ever had! Highly recommend Espresso
+                Delight."
+                <cite>- Jane Doe</cite>
+              </blockquote>
+              <blockquote class="review">
+                "Morning Bliss is my daily go-to. Smooth and delicious."
+                <cite>- John Smith</cite>
+              </blockquote>
+              <blockquote class="review">
+                "Great variety and amazing quality!"
+                <cite>- Sarah Lee</cite>
+              </blockquote>
+            </div>
+            <div class="next-review">Next</div>
+          </div>
+        </div>
+      </section>
+      <section id="subscribe" class="section subscribe">
+        <div class="full-width-content">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Stay up to date with our latest products and promotions.</p>
+          <form class="visit-form">
+            <input type="email" id="email" placeholder="Email" name="email" required />
+            <button type="submit" class="cta-alt">Subscribe</button>
+          </form>
+        </div>
+      </section>
+      <section id="brands" class="section brands">
+        <div class="content">
+          <h2>Our Favorite Brands</h2>
+          <div class="brands-logos">
+            <img src="https://via.placeholder.com/150" alt="Partner 1" />
+            <img src="https://via.placeholder.com/150" alt="Partner 2" />
+            <img src="https://via.placeholder.com/150" alt="Partner 3" />
+            <img src="https://via.placeholder.com/150" alt="Partner 4" />
+            <img src="https://via.placeholder.com/150" alt="Partner 5" />
+          </div>
+        </div>
+      </section>
+      <section id ="visit" class=" visit">
+        <div class="full-width-content visit-content">
+            <div class="visit-image">
+                <img src="assets/outside.png" alt="" />
+            </div>
+            <div>
+                <h2>Come Visit Us</h2>
+                <p>123 Coffee Lane, Coffee City, CA 12345</p>
+                <p>Open daily from 6am to 8pm</p>
+            </div>
+       
+            <div class="visit-image"> 
+
+                <img src="assets/map.png" alt="" />
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Coffee Brew. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <script src="js/main.js"></script>
+  </body>
+</html>
