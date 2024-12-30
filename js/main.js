@@ -1,4 +1,19 @@
+
+
 document.addEventListener("DOMContentLoaded", () => {
+  var swiper = new Swiper(".swiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+      autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
   const heroTitle = document.querySelector(".hero-title");
   const heroSubtitle = document.querySelector(".hero-subtitle");
   const heroBtn = document.querySelector(".hero-cta");
@@ -31,7 +46,7 @@ gsap.to(heroImage, {
   y: -200, // Moves the image upward (parallax effect)
   ease: 'none', // Linear easing for a smooth parallax effect
   scrollTrigger: {
-    trigger: '.parallax-container', // Element to monitor
+    trigger: '#home', // Element to monitor
     start: 'top top',               // When the top of the container hits the top of the viewport
     end: 'bottom top',              // When the bottom of the container hits the top of the viewport
     scrub: true                     // Smoothly link animation to scroll
@@ -47,29 +62,5 @@ gsap.to(heroImage, {
     heroImage.style.transform = `translateY(-${parallaxShift}px)`;
   });
 
-  const reviews = document.querySelectorAll(".review");
 
-  const nextReview = document.querySelector(".next-review");
-  const prevReview = document.querySelector(".pre-review");
-
-  let currentReview = 0;
-
-  nextReview.addEventListener("click", () => {
-    console.log("next clicked");
-    reviews[currentReview].classList.remove("visible");
-    currentReview = (currentReview + 1) % reviews.length;
-    reviews[currentReview].classList.add("visible");
-  });
-
-  prevReview.addEventListener("click", () => {
-    console.log("prev clicked");
-    reviews[currentReview].classList.remove("visible");
-    currentReview = (currentReview - 1 + reviews.length) % reviews.length;
-    reviews[currentReview].classList.add("visible");
-  });
-  setInterval(() => {
-    reviews[currentReview].classList.remove("visible");
-    currentReview = (currentReview + 1) % reviews.length;
-    reviews[currentReview].classList.add("visible");
-  }, 2000);
 });
