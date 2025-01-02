@@ -17,8 +17,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    font-size: 1.1rem;
     color: var(--text-dark);
     background-color: #ffffff;
 }
@@ -32,14 +30,19 @@ h1 {
     font-size: 72px;
 }
 h2 {
-    font-size: 4rem;  
+    font-size: 64px;  
 }
 h3 {
-    font-size: 3rem;
+    font-size: 56px;
 }
 p {
     display: inline-block;
+    
     margin-bottom: 24px;
+}
+a ,p {
+    font-size: 16px;
+    line-height: 1.8;
 }
 
 /* Header and Navigation */
@@ -232,9 +235,12 @@ section {
     flex-direction: column;
     justify-content: center;
 }
+.home p {
+    font-size: 18px;
+    
+}
 .hero-image{
     position: absolute;
-    background-image: rgba(0, 0, 0, 0.9);
     top: 0;
     left: 0;
     transform: translateY(0px);
@@ -242,7 +248,7 @@ section {
     object-fit: cover;
     border-radius: 10px;
     height: 120%;
-    filter: brightness(50%);
+    filter: brightness(40%);
     will-change: transform;
    
 }
@@ -253,7 +259,6 @@ section {
     font-weight: bold;
 }
 .hero-subtitle{
-    margin-bottom: 2rem;
     opacity: 0;
     transform: translateY(20px);
     animation: slide-up 1s ease forwards 0.5s;
@@ -297,10 +302,7 @@ section {
     object-fit: cover;
     border-radius: 50%;
 }
-.home p {
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
-}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
