@@ -28,6 +28,35 @@ document.addEventListener("DOMContentLoaded", () => {
   heroSubtitle.classList.add("visible");
   heroBtn.classList.add("visible");
 
+// Select all accordion buttons
+const accordionButtons = document.querySelectorAll(".accordion-button");
+
+accordionButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+        const isActive = content.classList.contains("active");
+
+        // Close all accordion items with animation
+        document.querySelectorAll(".accordion-content").forEach(item => {
+            if (item.classList.contains("active")) {
+                item.style.maxHeight = item.scrollHeight + "px"; // Set maxHeight to current height
+                setTimeout(() => {
+                    item.style.maxHeight = null; // Animate closing
+                }, 0);
+            }
+            item.classList.remove("active");
+        });
+
+        // If the clicked item wasn't active, open it with animation
+        if (!isActive) {
+            content.classList.add("active");
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+});
+
+
+ 
 // Register the GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
 

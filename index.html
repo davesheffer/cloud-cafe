@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Brew</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />   
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -15,26 +18,28 @@
           <span class="hamburger"></span>
         </button>
         <ul class="nav-links">
-          <li ><a style="color: #e69d45" href="index.html">Home</a></li>
+          <li><a style="color: #e69d45" href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <button class="cta">Book Venue</button>
         </ul>
       </nav>
     </header>
 
     <main>
       <section id="home" class="section home">
-        <img class="hero-image" src="../assets/hero.jpg" alt="">
+        <img class="hero-image" src="../assets/hero.jpg" alt="" />
         <div class="content">
           <h1 class="hero-title">Life Happens, Coffee Helps</h1>
-          <p class="hero-subtitle">Experience the finest coffee blends crafted to perfection.</p>
+          <p class="hero-subtitle">
+            Experience the finest coffee blends crafted to perfection.
+          </p>
           <div class="hero-buttons-container">
             <button class="cta-alt hero-cta">Our Blends</button>
-            <button class="cta hero-cta">See Venue</button>
+            <button class="cta hero-cta">Take A Tour</button>
           </div>
-         
         </div>
       </section>
 
@@ -47,22 +52,37 @@
               <h3>Espresso Delight</h3>
               <p>Rich and bold espresso blend for true coffee lovers.</p>
               <div class="cta-arrrow">Get A Taste</div>
-              </div>
+            </div>
             <div class="card">
-                <img src="assets/blend2.png" alt="Coffee Blend 2" />
+              <img src="assets/blend2.png" alt="Coffee Blend 2" />
               <h3>Morning Bliss</h3>
               <p>A smooth, mild blend perfect for starting your day.</p>
               <div class="cta-arrrow">Get A Taste</div>
             </div>
             <div class="card">
-                <img src="assets/blend3.png" alt="Coffee Blend 3" />
+              <img src="assets/blend3.png" alt="Coffee Blend 3" />
               <h3>Decaf Harmony</h3>
               <p>
                 All the flavor, none of the caffeine. A perfect evening brew.
-            
               </p>
               <div class="cta-arrrow">Get A Taste</div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="brands" class="section brands">
+        <div class="content">
+          <h2>Our Favorite Brands</h2>
+        </div>
+        <div class="full-width-content">
+          <div class="brands-logos">
+            <img src="./assets/logos/1.png" alt="Partner 1" />
+            <img src="./assets/logos/2.png" alt="Partner 1" />
+            <img src="./assets/logos/3.png" alt="Partner 1" />
+            <img src="./assets/logos/4.png" alt="Partner 1" />
+            <img src="./assets/logos/6.png" alt="Partner 1" />
+            <img src="./assets/logos/7.png" alt="Partner 1" />
+            <img src="./assets/logos/8.png" alt="Partner 1" />
           </div>
         </div>
       </section>
@@ -74,15 +94,32 @@
               <p>
                 We are passionate about coffee. Our roastery and café provide
                 high-quality coffee made from the finest beans sourced globally.
-                We believe in sustainability and fair trade practices. 
-                <br>
-                Our mission is to deliver exceptional coffee while supporting coffee-growing communities around the world.
-
+                We believe in sustainability and fair trade practices.
+                <br />
+                Our mission is to deliver exceptional coffee while supporting
+                coffee-growing communities around the world.
               </p>
               <div class="cta-arrrow">Read More</div>
             </div>
-            <img src="assets/customer.png"  alt="" />
+            <img src="assets/customer.png" alt="" />
           </div>
+        </div>
+      </section>
+    
+      <section id="subscribe" class="section subscribe">
+        <div class="full-width-content">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Stay up to date with our latest products and promotions.</p>
+          <form class="visit-form">
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              name="email"
+              required
+            />
+            <button type="submit" class="cta-alt">Subscribe</button>
+          </form>
         </div>
       </section>
       <section id="reviews" class="section reviews">
@@ -99,7 +136,7 @@
                     "I love the coffee from Coffee Brew. It's the best I've ever
                     tasted!"
                   </p>
-                  <h3>John Doe</h3>
+                  <h4>John Doe</h4>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -108,7 +145,7 @@
                   <p>
                     "The coffee is amazing! I can't start my day without it."
                   </p>
-                  <h3>Jane Smith</h3>
+                  <h4>Jane Smith</h4>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -118,7 +155,7 @@
                     "I've tried many coffee brands, but Coffee Brew is my
                     favorite."
                   </p>
-                  <h3>Mike Johnson</h3>
+                  <h4>Mike Johnson</h4>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -128,7 +165,7 @@
                     "The coffee is so fresh and delicious. I recommend it to
                     everyone!"
                   </p>
-                  <h3>Sarah Brown</h3>
+                  <h4>Sarah Brown</h4>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -138,59 +175,31 @@
                     "I'm a coffee enthusiast, and Coffee Brew is my go-to place
                     for coffee."
                   </p>
-                  <h3>David White</h3>
+                  <h4>David White</h4>
                 </div>
               </div>
-               
-            
             </div>
-            
-          
+
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-          
-         
           </div>
         </div>
       </section>
-      <section id="subscribe" class="section subscribe">
-        <div class="full-width-content">
-          <h2>Subscribe to Our Newsletter</h2>
-          <p>Stay up to date with our latest products and promotions.</p>
-          <form class="visit-form">
-            <input type="email" id="email" placeholder="Email" name="email" required />
-            <button type="submit" class="cta-alt">Subscribe</button>
-          </form>
-        </div>
-      </section>
-      <section id="brands" class="section brands">
-        <div class="content">
-          <h2>Our Favorite Brands</h2>
-          <div class="brands-logos">
-            <img src="https://via.placeholder.com/150" alt="Partner 1" />
-            <img src="https://via.placeholder.com/150" alt="Partner 2" />
-            <img src="https://via.placeholder.com/150" alt="Partner 3" />
-            <img src="https://via.placeholder.com/150" alt="Partner 4" />
-            <img src="https://via.placeholder.com/150" alt="Partner 5" />
-          </div>
-        </div>
-      </section>
-      <section id ="visit" class=" visit">
+      <section id="visit" class="visit">
         <div class="full-width-content visit-content">
-            <div class="visit-image">
-                <img src="assets/outside.png" alt="" />
-            </div>
-            <div>
-                <h2>Come Visit Us</h2>
-                <p>123 Coffee Lane, Coffee City, CA 12345</p>
-                <p>Open daily from 6am to 8pm</p>
-            </div>
-       
-            <div class="visit-image"> 
+          <div class="visit-image">
+            <img src="assets/outside.png" alt="" />
+          </div>
+          <div class="visit-text">
+            <h2>Come Visit Us</h2>
+            <p>123 Coffee Lane, Coffee City, CA 12345</p>
+            <p>Open daily from 6am to 8pm</p>
+          </div>
 
-                <img src="assets/map.png" alt="" />
-            </div>
+          <div class="visit-image">
+            <img src="assets/map.png" alt="" />
+          </div>
         </div>
       </section>
     </main>
@@ -199,8 +208,8 @@
       <p>&copy; 2024 Coffee Brew. All rights reserved.</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script defer src="js/main.js"></script>
   </body>
 </html>
