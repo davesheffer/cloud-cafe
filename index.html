@@ -12,22 +12,29 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <div class="logo">Coffee Brew</div>
-        <button class="nav-toggle" aria-label="Toggle navigation">
-          <span class="hamburger"></span>
-        </button>
+      <nav class="navbar" aria-expanded="true">
+        <div class="logo">
+          <img src="assets/logo.png" alt="">
+          <h5>Cloud Cafe'</h1>
+        </div>
         <ul class="nav-links">
           <li><a style="color: #e69d45" href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
+          <li><a href="menu.html">Menu</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
           <button class="cta">Book Venue</button>
         </ul>
+        <button class="menu" aria-label="Toggle Menu">
+          <svg width="40" height="40" viewBox="0 0 100 100" fill="currentColor">
+            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
       </nav>
+      
     </header>
-
     <main>
       <section id="home" class="section home">
         <img class="hero-image" src="../assets/hero.jpg" alt="" />
@@ -39,50 +46,6 @@
           <div class="hero-buttons-container">
             <button class="cta-alt hero-cta">Our Blends</button>
             <button class="cta hero-cta">Take A Tour</button>
-          </div>
-        </div>
-      </section>
-
-      <section id="featured" class="section featured">
-        <div class="content">
-          <h2>Our Featured Blends</h2>
-          <div class="cards">
-            <div class="card">
-              <img src="assets/blend1.png" alt="Coffee Blend 1" />
-              <h3>Espresso Delight</h3>
-              <p>Rich and bold espresso blend for true coffee lovers.</p>
-              <div class="cta-arrrow">Get A Taste</div>
-            </div>
-            <div class="card">
-              <img src="assets/blend2.png" alt="Coffee Blend 2" />
-              <h3>Morning Bliss</h3>
-              <p>A smooth, mild blend perfect for starting your day.</p>
-              <div class="cta-arrrow">Get A Taste</div>
-            </div>
-            <div class="card">
-              <img src="assets/blend3.png" alt="Coffee Blend 3" />
-              <h3>Decaf Harmony</h3>
-              <p>
-                All the flavor, none of the caffeine. A perfect evening brew.
-              </p>
-              <div class="cta-arrrow">Get A Taste</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="brands" class="section brands">
-        <div class="content">
-          <h2>Our Favorite Brands</h2>
-        </div>
-        <div class="full-width-content">
-          <div class="brands-logos">
-            <img src="./assets/logos/1.png" alt="Partner 1" />
-            <img src="./assets/logos/2.png" alt="Partner 1" />
-            <img src="./assets/logos/3.png" alt="Partner 1" />
-            <img src="./assets/logos/4.png" alt="Partner 1" />
-            <img src="./assets/logos/6.png" alt="Partner 1" />
-            <img src="./assets/logos/7.png" alt="Partner 1" />
-            <img src="./assets/logos/8.png" alt="Partner 1" />
           </div>
         </div>
       </section>
@@ -105,7 +68,49 @@
           </div>
         </div>
       </section>
-    
+      <section id="featured" class="section featured">
+        <div class="content">
+          <h2>Our Signature Offerings</h2>
+          <div class="cards">
+            <div class="card">
+              <img src="assets/blend1.png" alt="Coffee Blend 1" />
+              <h3>Artisan Coffee</h3>
+              <p>Rich, aromatic blends crafted from the finest beans.</p>
+              <div class="cta-arrrow">Get A Taste</div>
+            </div>
+            <div class="card">
+              <img src="assets/blend2.png" alt="Coffee Blend 2" />
+              <h3>Fresh Pastries</h3>
+              <p>Locally baked treats to pair perfectly with your coffee.</p>
+              <div class="cta-arrrow">Get A Taste</div>
+            </div>
+            <div class="card">
+              <img src="assets/blend3.png" alt="Coffee Blend 3" />
+              <h3>Warm Atmosphere</h3>
+              <p>
+                A cosy space to relax, work, or meet friends.
+              </p>
+              <div class="cta-arrrow">Get A Taste</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="brands" class="section brands">
+        <div class="content">
+          <h2>Our Favorite Brands</h2>
+        </div>
+        <div class="full-width-content">
+          <div class="brands-logos">
+            <img src="./assets/logos/1.png" alt="Partner 1" />
+            <img src="./assets/logos/2.png" alt="Partner 1" />
+            <img src="./assets/logos/3.png" alt="Partner 1" />
+            <img src="./assets/logos/4.png" alt="Partner 1" />
+            <img src="./assets/logos/6.png" alt="Partner 1" />
+            <img src="./assets/logos/7.png" alt="Partner 1" />
+            <img src="./assets/logos/8.png" alt="Partner 1" />
+          </div>
+        </div>
+      </section>
       <section id="subscribe" class="section subscribe">
         <div class="full-width-content">
           <h2>Subscribe to Our Newsletter</h2>

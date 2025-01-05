@@ -1,84 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - BrewVerse</title>
-    <link rel="stylesheet" href="css/style.css">
-</head> 
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-          <div class="logo">Coffee Brew</div>
-          <button class="nav-toggle" aria-label="Toggle navigation">
-            <span class="hamburger"></span>
-          </button>
-          <ul class="nav-links">
-            <li><a style="color: #e69d45" href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <button class="cta">Book Venue</button>
-          </ul>
-        </nav>
-      </header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="assets/logo.png" alt="" />
+          <h5>Cloud Cafe'</h5>
+        </div>
+        <ul class="nav-links">
+          <li><a style="color: #e69d45" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <button class="cta">Book Venue</button>
+        </ul>
+      </nav>
+    </header>
     <main>
-        <section class="inner-banner">
-            <div class="content">
-                <h1>Contact Us</h1>
-                <p>Get in touch with us for any inquiries or feedback.</p>
+      <section class="inner-banner">
+        <div class="content">
+          <h1>Contact Us</h1>
+          <p>Get in touch with us for any inquiries or feedback.</p>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="content content-double-contact">
+          <div id="form-container">
+            <div>
+              <h2>Get in Touch</h2>
+              <p>Fill out the form below to send us a message.</p>
             </div>
-         </section>
-        <section class="contact">
-          <div class="content content-double-contact">
-            <div id="form-contaainer">
-              <div>
-                <h2>Get in Touch</h2>
-                <p>Fill out the form below to send us a message.</p>
+            <form>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
               </div>
-              <form>
-                <div class="form-field">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-field">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-field">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" rows="5"></textarea>
-                </div>
-                <div class="cta-arrrow">Send</div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+              </div>
+              <div class="cta-arrrow">Send</div>
             </form>
-            </div>
-            
-
-          
+          </div>
           <div>
             <h3>Visit Us</h3>
-            <p>Stop by our café to enjoy a cup of coffee or to purchase our products.</p>
+            <p>
+              Stop by our café to enjoy a cup of coffee or to purchase our
+              products.
+            </p>
             <address>
-              123 Coffee Lane<br>
+              123 Coffee Lane<br />
               Coffee City, CA 12345
             </address>
 
             <h3>Call Us</h3>
-            <p>For any inquiries or feedback, call us at <a href="tel:+1234567890">123-456-7890</a>.</p>
+            <p>
+              For any inquiries or feedback, call us at
+              <a href="tel:+1234567890">123-456-7890</a>.
+            </p>
 
             <h3>Hours of Operation</h3>
-            <p>Monday - Friday: 7am - 7pm<br>
-              Saturday - Sunday: 8am - 5pm</p>
-
+            <p>
+              Monday - Friday: 7am - 7pm<br />
+              Saturday - Sunday: 8am - 5pm
+            </p>
           </div>
-          
-        </section>
-        
+        </div>
+      </section>
     </main>
     <footer>
-        <p>&copy; 2024 BrewVerse. All rights reserved.</p>
+      <p>&copy; 2024 BrewVerse. All rights reserved.</p>
     </footer>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
