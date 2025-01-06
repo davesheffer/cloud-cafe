@@ -42,11 +42,17 @@ h1 {
 }
 
 h2 {
-    font-size: 64px;
+    font-size: 60px;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 48px;
+}
+h4 {
+    font-size: 32px;
+}
+h5 {
+    font-size: 24px;
 }
 
 p {
@@ -102,12 +108,20 @@ header.scrolled {
 
 .accordion-button {
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
     align-items: center;
     cursor: pointer;
     border: none;
     background: transparent;
-
+    margin-bottom: 24px;
+}
+.accordion-button h4 {
+    margin-bottom: 0;
+}
+.accordion-button span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
 .accordion-content.active {
@@ -147,7 +161,12 @@ header.scrolled {
     z-index: 1;
 }
 
+#best-brand {
+    padding-top: 30px;
+    width:200px;   
+    height: auto;
 
+}
 .cta-arrrow:hover::after {
     transform: translateX(5px);
 
@@ -232,7 +251,6 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 52px;
-
 }
 
 .content-double-contact {
@@ -458,8 +476,18 @@ section {
 .visit-form {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     width: 50%;
+}
+.visit-form input {
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid var(--secondary-color);
+}
+.visit-form input::placeholder {
+    color: var(--secondary-color);
+    font-weight: bold;
 }
 
 .inner-banner {
@@ -681,7 +709,7 @@ footer p {
     font-weight: 500;
 }
 
-.menu {
+.menu-button {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -731,9 +759,11 @@ footer p {
 }
 
 @media screen and (max-width: 1200px) {
-    .menu {
+    
+    .menu-button {
         display: flex;
         z-index: 1000;
+
     }
   .logo h5 {
         z-index: 1000;
@@ -777,5 +807,30 @@ footer p {
 
     .opened .nav-links a::before {
         background-color: var(--secondary-color);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 0 1rem;
+    }
+    .blog-content {
+        grid-template-columns: 1fr;
+    }
+    .content-double-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .content-double {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .swiper-wrapper {
+        padding: 0
+    }
+    .brands-logos {
+        flex-wrap: wrap;
     }
 }

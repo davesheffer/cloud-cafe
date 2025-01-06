@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <nav class="navbar" aria-expanded="true">
         <div class="logo">
           <img src="assets/logo.png" alt="">
           <h5>Cloud Cafe'</h5>
@@ -21,80 +21,105 @@
           <li><a href="contact.html">Contact</a></li>
           <button class="cta">Book Venue</button>
         </ul>
+        <button class="menu-button" aria-label="Toggle Menu">
+          <svg width="40" height="40" viewBox="0 0 100 100" fill="currentColor">
+            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
       </nav>
+      
     </header>
     <main>
-   
       <section class="inner-banner">
-        <h1>About BrewVerse</h1>
+        <h1>Welcome to Cloud Café</h1>
         <p>
-          We are passionate about coffee. Our roastery and café provide
-          high-quality coffee made from the finest beans sourced globally.
+          where the beans are worldly, the brews are cracking, and the vibe’s as cosy as a cuppa with your nan.
         </p>
       </section>
       <section>
         <div class="content content-double">
-            <div>
-                <h2>Our Story</h2>
-        <p>
-        Located just steps from Watford, The Daily Grind was founded with one simple goal: to serve exceptional coffee in a space where everyone feels at home. From our handpicked local roasts to our cosy, welcoming vibe, we’re all about quality, community, and making every cup count.
-Stop by for your daily fix – we’re here to make your day a little better.
-        </p>
-            </div>
-            <img src="assets/story.png" alt="">
+          <div>
+            <h2>Our Story</h2>
+            <p>
+           Just a stone’s throw
+              from Watford, Cloud Café began with a simple yet noble quest: to
+              serve top-notch coffee in a space that feels as welcoming as a
+              warm cuppa on a rainy day. From the moment we opened our doors,
+              we’ve been all about quality, community, and making every visit
+              feel like a proper treat.
+            </p>
+            <p>Our beans? Handpicked from local roasters with more care than your mum puts into her Sunday roast. Our vibe? Cosier than a pair of woolly socks fresh out of the tumble dryer. Whether you’re popping in for your daily caffeine fix or escaping the chaos of the world, we’re here to brighten your day – one cracking cup at a time.</p>
+            <img id="best-brand" src="assets/best.png" alt="" />
+          </div>
+          <img src="assets/story.png" alt="" />
         </div>
-        
       </section>
       <section id="about" class="section about">
         <div class="content about-content">
           <div class="content-double">
             <img src="assets/venue1.png" alt="" />
             <div class="content-double-text">
-              
               <h2>The Ideal Spot for Your Occasion</h2>
               <p>
-                Our café is the ideal location to host your special events, whether you're planning a cozy birthday celebration, meeting with friends, relatives, or a partner, or seeking a serene space to work. We’ll personalize the decor to match your style, ensuring a memorable experience.
+                Our café is the ideal location to host your special events,
+                whether you're planning a cozy birthday celebration, meeting
+                with friends, relatives, or a partner, or seeking a serene space
+                to work. We’ll personalize the decor to match your style,
+                ensuring a memorable experience.
               </p>
               <div id="accordion">
                 <div class="accordion-item">
-                  <h4 class="accordion-button">Private coffee room</h4>
-                  <div class="accordion-content active">
+                  <div class="accordion-button">
+                    <span class="accordion-icon">-</span>
+                    <h4 >Private coffee room</h4>
+                  </div>
+                  <div class="accordion-content active" style="max-height: 82px;">
                     <p>
-                      Our café offers a variety of services to make your event special. From catering to decorations, we have you covered.
+                      Our café offers a variety of services to make your event
+                      special. From catering to decorations, we have you
+                      covered.
                     </p>
                   </div>
-                  
                 </div>
                 <div class="accordion-item">
-                  <h4 class="accordion-button">Birthday Party</h4>
+                  <div class="accordion-button">
+                    <span class="accordion-icon">+</span>
+                    <h4 >Birthday Party</h4>
+                  </div>
                   <div class="accordion-content">
                     <p>
-                      Our café offers a variety of services to make your event special. From catering to decorations, we have you covered.
+                      Our café offers a variety of services to make your event
+                      special. From catering to decorations, we have you
+                      covered.
                     </p>
                   </div>
-                  
                 </div>
                 <div class="accordion-item">
-                  <h4 class="accordion-button">Working & Meetings</h4>
+                  <div class="accordion-button">
+                    <span class="accordion-icon">+</span>
+                    <h4>Working & Meetings</h4>
+                  </div>  
                   <div class="accordion-content">
                     <p>
-                      Our café offers a variety of services to make your event special. From catering to decorations, we have you covered.
+                      Our café offers a variety of services to make your event
+                      special. From catering to decorations, we have you
+                      covered.
                     </p>
                   </div>
-                  
                 </div>
               </div>
               <div class="cta-arrrow">Book Now</div>
             </div>
-          
           </div>
         </div>
       </section>
-    
+
       <section id="subscribe" class="section subscribe">
         <div class="full-width-content">
-          <h2>Subscribe to Our Newsletter</h2>
-          <p>Stay up to date with our latest products and promotions.</p>
+          <h2>Join the Cloud Café Club</h2>
+          <p>Exclusive Perks, Special Deals, and a Sip Ahead of the Rest!</p>
           <form class="visit-form">
             <input
               type="email"
@@ -111,6 +136,8 @@ Stop by for your daily fix – we’re here to make your day a little better.
     <footer>
       <p>&copy; 2024 BrewVerse. All rights reserved.</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
