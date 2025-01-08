@@ -1,38 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  gsap.utils.toArray(".content").forEach(section => {
-    gsap.fromTo(section, {
-      opacity: 0,  
-    }, {
-      scrollTrigger: {
-        trigger: section,
-        start: "top 110%",  
-        end: "bottom 90%",  
-        scrub: true,       
-        toggleActions: "play none none reverse",  
-      },
-      opacity: 1,        
-      duration: 1,         
-      ease: "power2.out", 
-    });
-    
-    gsap.fromTo(section, {
-      opacity: 1,    
-    }, {
-      scrollTrigger: {
-        trigger: section,
-        start: "bottom 20%",  
-        end: "bottom",   
-        scrub: true,       
-        toggleActions: "none none none none",  
-      },
-      opacity: 0,       
-      duration: 1,      
-      ease: "power2.out" 
-    });
-  });
-  
   const header = document.querySelector("header");
   const menuBtn = document.querySelector(".menu-button");
   const navbar = document.querySelector(".navbar");
@@ -41,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuLinks = document.querySelector(".menu-links");
     menuBtn.classList.toggle("opened");
     navbar.classList.toggle("open");
-   
   });
   if (header) {
     document.addEventListener("scroll", () => {
@@ -56,6 +23,46 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const currentPage = window.location.pathname;
   if (currentPage === "/index.html") {
+    gsap.utils.toArray(".content").forEach((section) => {
+      gsap.fromTo(
+        section,
+        {
+          opacity: 0,
+        },
+        {
+          scrollTrigger: {
+            trigger: section,
+            start: "top 110%",
+            end: "bottom 90%",
+            scrub: true,
+            toggleActions: "play none none reverse",
+          },
+          opacity: 1,
+          duration: 1,
+          ease: "power2.out",
+        }
+      );
+
+      gsap.fromTo(
+        section,
+        {
+          opacity: 1,
+        },
+        {
+          scrollTrigger: {
+            trigger: section,
+            start: "bottom 20%",
+            end: "bottom",
+            scrub: true,
+            toggleActions: "none none none none",
+          },
+          opacity: 0,
+          duration: 1,
+          ease: "power2.out",
+        }
+      );
+    });
+
     var swiper = new Swiper(".swiper", {
       slidesPerView: 2,
       spaceBetween: 30,
@@ -65,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         disableOnInteraction: false,
       },
       // Responsive breakpoints
-     
+
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -83,7 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
           slidesPerView: 1,
         },
       },
-
     });
     const heroTitle = document.querySelector(".hero-title");
     const heroSubtitle = document.querySelector(".hero-subtitle");
@@ -93,17 +99,14 @@ document.addEventListener("DOMContentLoaded", () => {
     heroSubtitle?.classList.add("visible");
     heroBtn?.classList.add("visible");
 
-
-
-
     const heroImage = document.querySelector(".hero-image");
-      // gsap.to(heroImage, {
-      //   scale: 1.2, // Zoom to 1.2x
-      //   duration: 15, // Time for one full zoom cycle
-      //   yoyo: true, // Reverse zoom after completing
-      //   repeat: -1, // Infinite loop
-      //   ease: "power1.inOut", // Smooth easing
-      // });
+    // gsap.to(heroImage, {
+    //   scale: 1.2, // Zoom to 1.2x
+    //   duration: 15, // Time for one full zoom cycle
+    //   yoyo: true, // Reverse zoom after completing
+    //   repeat: -1, // Infinite loop
+    //   ease: "power1.inOut", // Smooth easing
+    // });
 
     gsap.to(heroImage, {
       y: -200, // Moves the image upward (parallax effect)
@@ -138,7 +141,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 0);
           }
           item.classList.remove("active");
-          item.previousElementSibling.querySelector(".accordion-icon").textContent = "+";
+          item.previousElementSibling.querySelector(
+            ".accordion-icon"
+          ).textContent = "+";
         });
 
         // If the clicked item wasn't active, open it with animation
@@ -163,7 +168,6 @@ document.addEventListener("DOMContentLoaded", () => {
       pastries: document.querySelector("#menu-pastries"),
       all: document.querySelector("#menu-all"),
     };
-
 
     const setActiveSection = (activeKey) => {
       Object.keys(sections).forEach((key) => {

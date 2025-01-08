@@ -4,17 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - BrewVerse</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <nav class="navbar" aria-expanded="true">
         <div class="logo">
-          <img src="assets/logo.png" alt="">
+          <img src="assets/logo.png" alt="" />
           <h5>Cloud Cafe'</h5>
         </div>
         <ul class="nav-links">
-          <li><a style="color: #e69d45" href="index.html">Home</a></li>
+          <li>
+            <a style="color: #e69d45" href="index.html"> Home </a>
+          </li>
           <li><a href="about.html">About</a></li>
           <li><a href="menu.html">Menu</a></li>
           <li><a href="blog.html">Blog</a></li>
@@ -23,27 +32,38 @@
         </ul>
         <button class="menu-button" aria-label="Toggle Menu">
           <svg width="40" height="40" viewBox="0 0 100 100" fill="currentColor">
-            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
             <path class="line line2" d="M 20,50 H 80" />
-            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
           </svg>
         </button>
       </nav>
-      
     </header>
     <main>
       <section class="inner-banner">
         <div class="content">
-          <h1>Contact Us</h1>
-          <p>Get in touch with us for any inquiries or feedback.</p>
+          <h1>Stay in Touch with Cloud Café</h1>
+          <p>
+            Got a question, a suggestion, or just fancy saying hello? We’d love
+            to hear from you!
+          </p>
         </div>
       </section>
       <section class="contact">
         <div class="content content-double-contact">
           <div id="form-container">
-            <div>
-              <h2>Get in Touch</h2>
-              <p>Fill out the form below to send us a message.</p>
+            <div id="contact-header">
+              <h3>Spill the Beans</h3>
+              <p>
+                Got a question, suggestion, or just want to say hi? Drop us a
+                message below!
+              </p>
             </div>
             <form>
               <div class="form-field">
@@ -62,27 +82,39 @@
             </form>
           </div>
           <div>
-            <h3>Visit Us</h3>
-            <p>
-              Stop by our café to enjoy a cup of coffee or to purchase our
-              products.
-            </p>
-            <address>
-              123 Coffee Lane<br />
-              Coffee City, CA 12345
-            </address>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Visit Us</h4>
+              </div>
 
-            <h3>Call Us</h3>
-            <p>
-              For any inquiries or feedback, call us at
-              <a href="tel:+1234567890">123-456-7890</a>.
-            </p>
+              <p>123 Brew Street London, SE1 2TH United Kingdom</p>
+            </div>
 
-            <h3>Hours of Operation</h3>
-            <p>
-              Monday - Friday: 7am - 7pm<br />
-              Saturday - Sunday: 8am - 5pm
-            </p>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <i class="fa-solid fa-mobile"></i>
+                <h4>Call Us</h4>
+              </div>
+
+              <p>
+                For any inquiries or feedback, give us a ring at
+                <a href="tel:+1234567890"> 020 7946 1234.</a>
+                .
+              </p>
+            </div>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <i class="fa-regular fa-clock"></i>
+                <h4>Hours of Operation</h4>
+              </div>
+
+              <p>
+                Monday - Friday: 7am - 7pm
+                <br />
+                Saturday - Sunday: 8am - 5pm
+              </p>
+            </div>
           </div>
         </div>
       </section>
