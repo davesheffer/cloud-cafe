@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     menuBtn.classList.toggle("opened");
     navbar.classList.toggle("open");
   });
+
   if (header) {
     document.addEventListener("scroll", () => {
       const scrollY = window.scrollY;
