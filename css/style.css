@@ -163,7 +163,7 @@ header.scrolled {
 
 #best-brand {
   padding-top: 30px;
-  width: 200px;
+  width: 144px;
   height: auto;
 }
 
@@ -860,7 +860,17 @@ footer p {
   .content {
     padding: 0 1rem;
   }
+  .inner-banner {
+    height: 450px;
+  }
 
+  #menu-filter {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .menu-container {
+    grid-template-columns: 1fr;
+  }
   .blog-content {
     grid-template-columns: 1fr;
   }
