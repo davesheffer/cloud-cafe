@@ -23,40 +23,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const currentPage = window.location.pathname;
   if (currentPage === "/index.html") {
-    gsap.utils.toArray(".content").forEach((section) => {
+    gsap.utils.toArray("section").forEach((section) => {
+      const heading = section.querySelector("h2");
+
+      // Animate the h2 when the section scrolls into view
       gsap.fromTo(
-        section,
+        heading,
         {
           opacity: 0,
+          y: 50, // Start slightly off-screen to the right
         },
         {
           scrollTrigger: {
             trigger: section,
-            start: "top 110%",
-            end: "bottom 90%",
+            markers: true,
+            start: "top 100%", // Animation starts when the top of the section is 80% from the top of the viewport
+            end: "top 40%", // Animation ends as the section scrolls further into view
             scrub: true,
             toggleActions: "play none none reverse",
           },
           opacity: 1,
-          duration: 1,
-          ease: "power2.out",
-        }
-      );
-
-      gsap.fromTo(
-        section,
-        {
-          opacity: 1,
-        },
-        {
-          scrollTrigger: {
-            trigger: section,
-            start: "bottom 20%",
-            end: "bottom",
-            scrub: true,
-            toggleActions: "none none none none",
-          },
-          opacity: 0,
+          y: 0, // Move back to the center
           duration: 1,
           ease: "power2.out",
         }
