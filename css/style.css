@@ -266,15 +266,26 @@ header.scrolled {
   color: var(--primary-color);
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
 .content {
   max-width: 1200px;
   width: 100%;
-  display: flex;
+
   margin: auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 2rem;
+
+
 }
 
 .full-width-content {
