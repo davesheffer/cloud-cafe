@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - BrewVerse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -147,8 +151,46 @@
         </div>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2024 BrewVerse. All rights reserved.</p>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section brand-section">
+          <div class="footer-logo">
+            <img src="assets/logo.png" alt="Cloud Cafe Logo" />
+            <h5>Cloud Cafe'</h5>
+          </div>
+          <p class="brand-description">Your cozy corner for premium coffee and unforgettable moments. Experience the perfect blend of comfort and taste.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section links-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section subscribe-section">
+          <h4>Stay Connected</h4>
+          <p class="subscribe-text">Subscribe to our newsletter for exclusive offers and updates.</p>
+          <form class="subscribe-form">
+            <div class="input-group">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit" class="cta">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Cloud Cafe. All rights reserved.</p>
+      </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
