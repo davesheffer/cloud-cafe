@@ -349,6 +349,7 @@ section {
 
 .swiper-wrapper {
   padding: 1rem 10rem;
+  box-sizing: border-box;
 }
 
 .swiper-slide {
