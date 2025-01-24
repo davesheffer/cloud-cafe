@@ -51,34 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     });
 
-    var swiper = new Swiper(".swiper", {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      // Responsive breakpoints
-
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        1024: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        768: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        425: {
-          slidesPerView: 1,
-        },
-      },
-    });
     const heroTitle = document.querySelector(".hero-title");
     const heroSubtitle = document.querySelector(".hero-subtitle");
     const heroBtn = document.querySelector(".hero-cta");
