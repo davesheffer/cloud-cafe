@@ -17,7 +17,7 @@
     <header>
       <nav class="navbar" aria-expanded="true">
         <div class="logo">
-          <img src="./assets/logo-special.svg" alt="" />
+          <img src="./assets/logo-special.svg" alt="Cloud Cafe logo" />
           <h5>Cloud Cafe'</h5>
         </div>
         <ul class="nav-links">
@@ -62,7 +62,7 @@
             <div id="contact-header">
               <h3>Spill the Beans</h3>
             </div>
-            <form>
+            <form action="#" method="POST">
               <div class="form-field">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required />
@@ -73,9 +73,9 @@
               </div>
               <div class="form-field">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5"></textarea>
+                <textarea id="message" name="message" rows="5" required></textarea>
               </div>
-              <div class="cta-arrrow">Send</div>
+              <button type="submit" class="cta-arrrow">Send</button>
             </form>
           </div>
           <div>
@@ -168,7 +168,7 @@
           <p>
             Join our newsletter to stay up to date on features and releases.
           </p>
-          <form class="subscribe-form">
+          <form class="subscribe-form" action="#" method="POST">
             <input
               type="email"
               id="footer-email"
